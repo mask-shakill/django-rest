@@ -14,6 +14,7 @@ A Django REST API for managing a todo list.
 8. [Testing](#testing)
 9. [Contributing](#contributing)
 10. [License](#license)
+11. [Manual Installation Process](#installation)
 
 ## Introduction
 
@@ -41,4 +42,8 @@ pip install -r requirements.txt
 
 # Run migrations
 python manage.py migrate
-## Manual Installation
+.........
+
+
+## Usage
+
