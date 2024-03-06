@@ -44,8 +44,8 @@ python manage.py migrate
 ```
 #  Inital Installation and setup process....
 ## 🌟 Create the project directory
-mkdir tutorial
-cd tutorial
+mkdir Todo
+cd Todo
 
 ## 🌟 Create a virtual environment (optional but recommended)
 python3 -m venv env
@@ -55,9 +55,26 @@ source env/bin/activate  # On Windows, use `env\\Scripts\\activate`
 pip install django djangorestframework
 
 ## 🌟 Set up a new project with a single application
-django-admin startproject tutorial .
-cd tutorial
-django-admin startapp quickstart
+django-admin startproject todo_api .
+cd todo_api
+django-admin startapp todo
+django-admin start app user
+
+##  🌟 Database Setup
+python manage.py migrate
+python manage.py createsuperuser --username admin --email admin@example.com
+
+## 🌟 Models
+from django.db import models
+
+🌟 Create your models here.
+class Todo(models.Model):
+    title = models.CharField(max_length=150)
+    desc = models.TextField()
+    created_at = models.DateTimeField(auto_now_add=True)
+    
+    def __str__(self):
+        return self.title
 
 
 
