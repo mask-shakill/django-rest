@@ -42,7 +42,7 @@ pip install -r requirements.txt
 # Run migrations
 python manage.py migrate
 ```
-#  Inital Installation and setup process
+#  Create, configure, install, initialize.
 #### 🌟 Create the project directory
 mkdir Todo
 cd Todo
