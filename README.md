@@ -2,7 +2,7 @@
 
 A Django REST API for managing a todo list.
 
-## Table of Contents
+# Table of Contents
 
 1. [Introduction](#introduction)
 2. [Features](#features)
@@ -16,17 +16,17 @@ A Django REST API for managing a todo list.
 10. [License](#license)
 11. [Manual Installation Process](#installation)
 
-## Introduction
+# Introduction
 
 Todo List API is a Django-powered REST API designed to facilitate the management of todo tasks. It provides a set of endpoints for creating, updating, deleting, and fetching todo items.
 
-## Features
+# Features
 
 - User authentication for secure access
 - CRUD operations for todo items
 - ...
 
-## Installation
+# Installation
 To get started with the Todo List API, follow these installation steps:
 
 ```bash
@@ -42,8 +42,8 @@ pip install -r requirements.txt
 # Run migrations
 python manage.py migrate
 ```
-## Inital Installation and setup process....
-# Create the project directory
+#  Inital Installation and setup process....
+🌟 Create the project directory
 mkdir tutorial
 cd tutorial
 
