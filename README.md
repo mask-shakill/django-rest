@@ -42,25 +42,25 @@ pip install -r requirements.txt
 # Run migrations
 python manage.py migrate
 ```
-#  Inital Installation and setup process....
-## 🌟 Create the project directory
+#  Inital Installation and setup process
+### 🌟 Create the project directory
 mkdir Todo
 cd Todo
 
-## 🌟 Create a virtual environment (optional but recommended)
+### 🌟 Create a virtual environment (optional but recommended)
 python3 -m venv env
 source env/bin/activate  # On Windows, use `env\\Scripts\\activate`
 
-## 🌟 Install Django and Django REST framework
+### 🌟 Install Django and Django REST framework
 pip install django djangorestframework
 
-## 🌟 Set up a new project with a single application
+#### 🌟 Set up a new project with a single application
 django-admin startproject todo_api .
 cd todo_api
 django-admin startapp todo
 django-admin start app user
 
-##  🌟 Database Setup
+####  🌟 Database Setup
 python manage.py migrate
 python manage.py createsuperuser --username admin --email admin@example.com
 
