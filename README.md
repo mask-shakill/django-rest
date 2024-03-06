@@ -51,7 +51,7 @@ cd tutorial
 python3 -m venv env
 source env/bin/activate  # On Windows, use `env\\Scripts\\activate`
 
-# Install Django and Django REST framework
+### Install Django and Django REST framework
 pip install django djangorestframework
 
 # Set up a new project with a single application
