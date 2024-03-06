@@ -145,4 +145,24 @@ class TodoDetails(APIView):
         todo.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
 ```
+## 🌟 URLs Base
 
+```python
+from django.contrib import admin
+from django.urls import path, include
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('api/', include('todo.urls')),
+]
+
+```
+## App URLs 
+```python
+from .views import TodoList,TodoDetails
+from django.urls import path
+
+urlpatterns = [
+   path('todos/',TodoList.as_view()),
+   path('todos/<int:pk>', TodoDetails.as_view())
+]
