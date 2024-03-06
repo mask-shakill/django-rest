@@ -65,15 +65,18 @@ python manage.py migrate
 python manage.py createsuperuser --username admin --email admin@example.com
 
 ## 🌟 Models
+### Todo Model
+
+```python
 from django.db import models
+
 class Todo(models.Model):
     title = models.CharField(max_length=150)
     desc = models.TextField()
     created_at = models.DateTimeField(auto_now_add=True)
-    
+
     def __str__(self):
         return self.title
-
 
 
 
